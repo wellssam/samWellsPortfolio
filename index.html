@@ -11,87 +11,119 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/bad53cee16.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul class="nav-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="button-styling" href="">Let's Talk</a></li>
+                </ul>
+            </nav>
 
-    <header>
-        <h1><span>Hello</span> I'm Sam Wells <span>Web Developer</span></h1>
-        <p>A cute brief intro which explains a bit of my whole deal.</p>
-        <a>Contact</a>
-        <a>Portfolio</a>
-        <img src="https://www.placecage.com/c/300/300"
-            alt="A charming photo of Sam Wells, which exudes both competence and charisma.">
-        <ul>
-            <li>Github Icon</li>
-            <li>Twitter Icon</li>
-            <li>Download Resume Icon</li>
-        </ul>
-    </header>
-    <main>
-        <section class="skills">
-            <h2>About Me</h2>
-            <p>Hi! My name is Sam wells. THis is a cute little bit of introductory text that i"m gonna fill in a little
-                later, but i did juno boot camp etc etc yadda yadda cool.</p>
-            <button>Download CV</button>
-            <a>Contact</a>
-            <ul>
-                <li>Skill icon</li>
-                <li>Skill icon</li>
-                <li>Skill icon</li>
-                <li>Skill icon</li>
-            </ul>
-        </section>
-        <section class="portfolio">
-            <h2>Portfolio</h2>
-            <ul>
-                <li>
-                    <img src="" alt="Movie Picker Screenshot">
-                    <h3>Movie Picker</h3>
-                    <p>HTML5, CSS3, Sass, JavaScript, RESTful API</p>
-                </li>
-                <li>
-                    <img src="" alt="Muthur personnel report Screenshot">
-                    <h3>MU//TH//UR Personnel Report</h3>
-                    <p>React, Firebase, HTML5, CSS3, Sass, JavaScript</p>
-                </li>
-                <li>
-                    <img src="" alt="Out of context movie spoiler Screenshot">
-                    <h3>Out of Context Movie Spoiler</h3>
-                    <p>React, RESTful APIs, HTML5, CSS3, Sass, JavaScript</p>
-                </li>
-            </ul>
-        </section>
-        <section class="testimonial">
-            <h2>Testimonial</h2>
-            <ul>
-                <li><img src="" alt="Geoff Image">"Sam is amazing."</li>
-                <li><img src="" alt="Aubrey Image">"[Sam] has such a unique energy, anyone that hires [her] will be SO
-                    LUCKY"</li>
-                <li><img src="" alt="Alex Image">"Sam [is] the best of the best."</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contact Me</h2>
-            <form action="">
-                <label for="name">Your Name</label>
-                <input id="name" type="text" placeholder="Your Name">
-                <label for="email">Your Email Address</label>
-                <input id="email" type="text" placeholder="Your Email Address">
-                <label for="subject">Subject</label>
-                <input id="subject" type="text" placeholder="Subject">
-                <label for="message">Your Message</label>
-                <input id="message" type="text" placeholder="Your Message">
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+            <div class="header-content">
+                <div class="header-text">
 
-        <ul>
-            <li>Github Icon</li>
-            <li>Twitter Icon</li>
-            <li>Download Resume Icon</li>
-        </ul>
-    </main>
+                    <h1>
+                        <span class="greeting">Hello, I'm</span>
+                        Sam Wells
+                        <span class="job-title">Web Developer</span>
+                    </h1>
+                    <p class="header-text">A cute brief intro which explains a bit of my whole deal.</p>
+                    <div class="header-buttons">
+                        <a class="button-styling">Contact</a>
+                        <a class="button-styling">Portfolio</a>
+                    </div>
+
+                </div>
+                <div class="image-wrapper header-image">
+                    <img src="https://www.placecage.com/c/300/300"
+                    alt="A charming photo of Sam Wells, which exudes both competence and charisma.">
+                </div>
+            </div>
+
+
+            <ul class="icon-list">
+                <li><a href=""><i class="fab fa-github"></i><span class="visuallyHidden">Github</span></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i><span class="visuallyHidden">LinkedIn</span></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i><span class="visuallyHidden">Twitter</span></a></li>
+                <li><a href=""><i class="fas fa-file-download"></i><span class="visuallyHidden">Download resume</span></a></li>
+            </ul>
+        </header>
+        <main>
+            <section class="about">
+                <h2>About Me</h2>
+                <p>Hi! My name is Sam wells. THis is a cute little bit of introductory text that i"m gonna fill in a
+                    little
+                    later, but i did juno boot camp etc etc yadda yadda cool.</p>
+                <button>Download CV</button>
+                <a>Contact</a>
+                <ul>
+                    <li>Skill icon</li>
+                    <li>Skill icon</li>
+                    <li>Skill icon</li>
+                    <li>Skill icon</li>
+                </ul>
+            </section>
+            <section class="portfolio">
+                <h2>Portfolio</h2>
+                <ul>
+                    <li>
+                        <img src="" alt="Movie Picker Screenshot">
+                        <h3>Movie Picker</h3>
+                        <p>HTML5, CSS3, Sass, JavaScript, RESTful API</p>
+                    </li>
+                    <li>
+                        <img src="" alt="Muthur personnel report Screenshot">
+                        <h3>MU//TH//UR Personnel Report</h3>
+                        <p>React, Firebase, HTML5, CSS3, Sass, JavaScript</p>
+                    </li>
+                    <li>
+                        <img src="" alt="Out of context movie spoiler Screenshot">
+                        <h3>Out of Context Movie Spoiler</h3>
+                        <p>React, RESTful APIs, HTML5, CSS3, Sass, JavaScript</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="testimonial">
+                <h2>Testimonial</h2>
+                <ul>
+                    <li><img src="" alt="Geoff Image">"Sam is amazing."</li>
+                    <li><img src="" alt="Aubrey Image">"[Sam] has such a unique energy, anyone that hires [her] will be
+                        SO
+                        LUCKY"</li>
+                    <li><img src="" alt="Alex Image">"Sam [is] the best of the best."</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Contact Me</h2>
+                <form action="">
+                    <label for="name">Your Name</label>
+                    <input id="name" type="text" placeholder="Your Name">
+                    <label for="email">Your Email Address</label>
+                    <input id="email" type="text" placeholder="Your Email Address">
+                    <label for="subject">Subject</label>
+                    <input id="subject" type="text" placeholder="Subject">
+                    <label for="message">Your Message</label>
+                    <input id="message" type="text" placeholder="Your Message">
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+            <ul>
+                <li>Github Icon</li>
+                <li>Twitter Icon</li>
+                <li>Download Resume Icon</li>
+            </ul>
+        </main>
+    </div>
 </body>
 
 </html>
