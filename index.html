@@ -15,14 +15,15 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
+    <header id="home">
+        <div class="wrapper">
+
             <nav>
                 <ul class="nav-items">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonial">Testimonial</a></li>
+                    <!-- <li><a href="#testimonial">Testimonial</a></li> -->
                     <li><a href="#contact">Contact</a></li>
                     <li><a class="button-styling" href="">Let's Talk</a></li>
                 </ul>
@@ -38,61 +39,133 @@
                     </h1>
                     <p class="header-text">A cute brief intro which explains a bit of my whole deal.</p>
                     <div class="header-buttons">
-                        <a class="button-styling">Contact</a>
-                        <a class="button-styling">Portfolio</a>
+                        <a href="#contact" class="button-styling">Contact</a>
+                        <a href="#portfolio" class="button-styling">Portfolio</a>
                     </div>
 
                 </div>
                 <div class="image-wrapper header-image">
                     <img src="https://www.placecage.com/c/300/300"
-                    alt="A charming photo of Sam Wells, which exudes both competence and charisma.">
+                        alt="A charming photo of Sam Wells, which exudes both competence and charisma.">
                 </div>
             </div>
 
 
             <ul class="icon-list">
-                <li><a href=""><i class="fab fa-github"></i><span class="visuallyHidden">Github</span></a></li>
-                <li><a href=""><i class="fab fa-linkedin"></i><span class="visuallyHidden">LinkedIn</span></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i><span class="visuallyHidden">Twitter</span></a></li>
-                <li><a href=""><i class="fas fa-file-download"></i><span class="visuallyHidden">Download resume</span></a></li>
+                <li><a href="https://github.com/wellssam" target="_blank"><i class="fab fa-github"></i><span
+                            class="visuallyHidden">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/sam-wells-6aa43720a/" target="_blank"><i
+                            class="fab fa-linkedin"></i><span class="visuallyHidden">LinkedIn</span></a></li>
+                <li><a href="https://twitter.com/Samaraww_" target="_blank"><i class="fab fa-twitter"></i><span
+                            class="visuallyHidden">Twitter</span></a></li>
+                <li><button><i class="fas fa-file-download"></i><span class="visuallyHidden">Download
+                            resume</span></button></li>
             </ul>
-        </header>
-        <main>
-            <section class="about">
-                <h2>About Me</h2>
-                <p>Hi! My name is Sam wells. THis is a cute little bit of introductory text that i"m gonna fill in a
-                    little
-                    later, but i did juno boot camp etc etc yadda yadda cool.</p>
-                <button>Download CV</button>
-                <a>Contact</a>
-                <ul>
-                    <li>Skill icon</li>
-                    <li>Skill icon</li>
-                    <li>Skill icon</li>
-                    <li>Skill icon</li>
-                </ul>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+
+
+            <section class="about" id="about">
+                <h2 class="right-heading">About Me</h2>
+                <div class="about-content">
+
+                    <h3>My Skills</h3>
+                    <div class="about-flex">
+
+                        <div class="about-text">
+                            <p>Hi! My name is Sam wells. THis is a cute little bit of introductory text that i"m gonna
+                                fill
+                                in a
+                                little
+                                later, but i did juno boot camp etc etc yadda yadda cool. </p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae illum temporibus
+                                repellat
+                                aperiam ipsa repellendus iure nam, dolor excepturi recusandae nostrum eaque animi eos!
+                                Maiores eius dolor eos, harum quis ab beatae in quam vel rerum at ut voluptate repellat
+                                ullam recusandae culpa similique magni enim, animi aliquam sapiente laboriosam!</p>
+                        </div>
+                        <ul class="skill-gallery">
+                            <li><i class="fab fa-html5"></i><span class="visuallyHidden">HTML5</span></li>
+                            <li><i class="fab fa-css3-alt"></i><span class="visuallyHidden">CSS3</span></li>
+                            <li><i class="fab fa-js-square"></i><span class="visuallyHidden">JavaScript</span></li>
+                            <li><i class="fab fa-react"></i><span class="visuallyHidden">React</span></li>
+                            <li><i class="fab fa-sass"></i><span class="visuallyHidden">Sass</span></li>
+                        </ul>
+                    </div>
+                    <div class="about-buttons">
+                        <button class="button-styling">Download CV</button>
+                        <a href=#contact class="button-styling">Contact</a>
+                    </div>
+                </div>
             </section>
-            <section class="portfolio">
-                <h2>Portfolio</h2>
-                <ul>
+            <section class="portfolio" id="portfolio">
+                <h2 class="left-heading">Portfolio</h2>
+                <ul class="portfolio-gallery">
                     <li>
-                        <img src="" alt="Movie Picker Screenshot">
+                        <div class="image-wrapper">
+
+                            <a target="_blank" href="https://raid-sam.github.io/movie-picker/">
+                                <img src="./assets/movie-picker-screencap.jpg"
+                                    alt="Screencap of Sam Wells' and Raid Naji's Movie Picker app, showing the app title above 2 dropdown selectors.">
+                            </a>
+                        </div>
                         <h3>Movie Picker</h3>
                         <p>HTML5, CSS3, Sass, JavaScript, RESTful API</p>
+                        <div class="portfolio-links">
+                            <a target="_blank" href="https://github.com/raid-sam/movie-picker"><i
+                                    class="fab fa-github"></i><span class="visuallyHidden">See this project's repo
+                                    on Github</span></a>
+                            <a target="_blank" href="https://raid-sam.github.io/movie-picker/"><i
+                                    class="fas fa-globe"></i></i><span class="visuallyHidden">See this project's
+                                    deployment</span></a>
+                        </div>
                     </li>
                     <li>
-                        <img src="" alt="Muthur personnel report Screenshot">
-                        <h3>MU//TH//UR Personnel Report</h3>
+                        <div class="image-wrapper">
+
+                            <a target="_blank" href="https://eager-lamport-a53ae9.netlify.app/">
+                                <img src="./assets/muthur-screencap.png"
+                                    alt="Screencap of Sam Wells' Muthur Personnel Report App, showing some character sheets for the Alien Roleplaying Game rendered in imitation-crt style.">
+                            </a>
+                        </div>
+                        <h3>MU//TH//UR Personnel Report </h3>
                         <p>React, Firebase, HTML5, CSS3, Sass, JavaScript</p>
+                        <div class="portfolio-links">
+
+                            <a target="_blank" href="https://github.com/wellssam/samWellsProject3"><i
+                                    class="fab fa-github"></i><span class="visuallyHidden">See this project's repo
+                                    on Github</span></a>
+                            <a target="_blank" href="https://eager-lamport-a53ae9.netlify.app/"><i
+                                    class="fas fa-globe"></i></i><span class="visuallyHidden">See this project's
+                                    deployment</span></a>
+                        </div>
                     </li>
                     <li>
-                        <img src="" alt="Out of context movie spoiler Screenshot">
+                        <div class="image-wrapper">
+                            <a target="_blank" href="https://confident-perlman-5594c2.netlify.app/">
+                                <img src="./assets/oocms-screencap.png"
+                                    alt="Screencap of Sam Wells', Alex Rodriguez Sta. Ana, Geoffrey Payton and William Gomes' Out Of Context Movie Spoiler app, showing the app title and a search bar in front of a blue background image of a movie theatre lobby.">
+                            </a>
+                        </div>
                         <h3>Out of Context Movie Spoiler</h3>
                         <p>React, RESTful APIs, HTML5, CSS3, Sass, JavaScript</p>
+                        <div class="portfolio-links">
+
+                            <a target="_blank" href="https://github.com/UndercoverGAWS/outOfContextMovieSpoiler"><i
+                                    class="fab fa-github"></i><span class="visuallyHidden">See this project's repo
+                                    on
+                                    Github</span></a>
+                            <a target="_blank" href="https://confident-perlman-5594c2.netlify.app/"><i
+                                    class="fas fa-globe"></i></i><span class="visuallyHidden">See this project's
+                                    deployment</span></a>
+                        </div>
                     </li>
                 </ul>
             </section>
-            <section class="testimonial">
+            <!-- <section class="testimonial">
                 <h2>Testimonial</h2>
                 <ul>
                     <li><img src="" alt="Geoff Image">"Sam is amazing."</li>
@@ -101,28 +174,45 @@
                         LUCKY"</li>
                     <li><img src="" alt="Alex Image">"Sam [is] the best of the best."</li>
                 </ul>
+            </section> -->
+            <section class="contact" id="contact">
+                <h2 class="right-heading">Contact</h2>
+                <div class="contact-content">
+                    <form action="">
+                        <label class="visuallyHidden" for="name">Your Name</label>
+                        <input id="name" type="text" placeholder="Your Name" required>
+                        <label class="visuallyHidden" for="email">Your Email Address</label>
+                        <input id="email" type="text" placeholder="Your Email Address" required>
+                        <label class="visuallyHidden" for="subject">Subject</label>
+                        <input id="subject" type="text" placeholder="Subject" required>
+                        <label class="visuallyHidden" for="message">Your Message</label>
+                        <textarea id="message" type="text" placeholder="Your Message" required></textarea>
+                        <button class="button-styling" type="submit">Send Message</button>
+                    </form>
+                    <div class="image-wrapper">
+                        <img src="https://www.placecage.com/c/300/200"
+                            alt="A charming photo of Sam Wells, which exudes both humour and fun.">
+                    </div>
+                </div>
             </section>
-            <section>
-                <h2>Contact Me</h2>
-                <form action="">
-                    <label for="name">Your Name</label>
-                    <input id="name" type="text" placeholder="Your Name">
-                    <label for="email">Your Email Address</label>
-                    <input id="email" type="text" placeholder="Your Email Address">
-                    <label for="subject">Subject</label>
-                    <input id="subject" type="text" placeholder="Subject">
-                    <label for="message">Your Message</label>
-                    <input id="message" type="text" placeholder="Your Message">
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
-
-            <ul>
-                <li>Github Icon</li>
-                <li>Twitter Icon</li>
-                <li>Download Resume Icon</li>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <ul class="icon-list">
+                <li><a href="https://github.com/wellssam" target="_blank"><i class="fab fa-github"></i><span
+                            class="visuallyHidden">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/sam-wells-6aa43720a/" target="_blank"><i
+                            class="fab fa-linkedin"></i><span class="visuallyHidden">LinkedIn</span></a></li>
+                <li><a href="https://twitter.com/Samaraww_" target="_blank"><i class="fab fa-twitter"></i><span
+                            class="visuallyHidden">Twitter</span></a></li>
+                <li><button><i class="fas fa-file-download"></i><span class="visuallyHidden">Download
+                            resume</span></button></li>
             </ul>
-        </main>
+        </div>
+    </footer>
+    <div class="background-elements">
+        <!-- <img src="./assets/bg-element-header-1.png" alt=""> -->
     </div>
 </body>
 
