@@ -84,6 +84,10 @@ p {
     line-height: 2.4rem;
 }
 
+.lighter-text{
+    color: #e2e2e3
+}
+
 .wrapper {
     max-width: 1200px;
     width: 80%;
@@ -709,3 +713,102 @@ footer .icon-list li {
     }
 
 }
+
+/* ANIMATION */
+
+@keyframes flicker{
+    0%{
+        background-color: transparent;
+    }
+
+    25%{
+        background-color: #242b58;
+    }
+    50%{
+        background-color: transparent;
+    }
+
+    75%{
+       background-color: #242b58;
+    }
+    100%{
+        background-color: transparent;
+    }
+
+}
+
+
+.halo{
+    animation: flicker 5s linear infinite;
+}
+
+.sunburst{
+    animation: flicker 5s linear infinite;
+}
+
+@keyframes pop-in{
+    0%{
+        right: -15px;
+    }
+
+    100%{
+        right: 3vw;
+    }
+}
+
+.icon-list.desktop-icons{
+    animation: pop-in 0.7s ease-out;
+}
+
+
+.skill-gallery i{
+    transition: 0.8s all;
+}
+
+.skill-gallery i:hover{
+    color:#6b84ff;
+    transform: scale(1.2);
+}
+
+
+.button-styling,
+nav li,
+.icon-list li,
+.portfolio-links a{
+    transition: 0.3s all;
+}
+
+@keyframes slide-in-line{
+    0%{
+        width: 0px;
+    }
+
+    100%{
+        width: 50px;
+    }
+}
+
+@keyframes slide-in-text{
+    0%{
+        padding-left: 0px;
+    }
+
+    100%{
+        padding-left: 60px;
+    }
+}
+
+@media(min-width:350px){
+    h1 span.greeting{
+        animation: slide-in-text 0.7s ease-out;
+    }
+    
+    h1 span.greeting::before{
+        animation: slide-in-line 0.7s ease-out;
+    }
+}
+
+/* .portfolio-gallery .image-wrapper{
+    transition: scale 0.2s ease-in;
+} */
+
