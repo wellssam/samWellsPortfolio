@@ -25,7 +25,7 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <!-- <li><a href="#testimonial">Testimonial</a></li> -->
                     <li><a href="#contact">Contact</a></li>
-                    <li><a class="button-styling" href="">Let's Talk</a></li>
+                    <li><a class="button-styling" target="_blank"   href="https://calendly.com/samwellsdev/30min">Let's Talk</a></li>
                 </ul>
             </nav>
 
@@ -37,6 +37,16 @@
                         Sam Wells
                         <span class="job-title">Web Developer</span>
                     </h1>
+                    <ul class="icon-list mobile-icons">
+                        <li><a href="https://github.com/wellssam" target="_blank"><i class="fab fa-github"></i><span
+                                    class="visuallyHidden">Github</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/sam-wells-6aa43720a/" target="_blank"><i class="fab fa-linkedin"></i><span
+                                    class="visuallyHidden">LinkedIn</span></a></li>
+                        <li><a href="https://twitter.com/Samaraww_" target="_blank"><i class="fab fa-twitter"></i><span
+                                    class="visuallyHidden">Twitter</span></a></li>
+                        <li><button><i class="fas fa-file-download"></i><span class="visuallyHidden">Download
+                                    resume</span></button></li>
+                    </ul>
                     <p class="header-text">A cute brief intro which explains a bit of my whole deal.</p>
                     <div class="header-buttons">
                         <a href="#contact" class="button-styling">Contact</a>
@@ -57,7 +67,7 @@
             </div>
 
 
-            <ul class="icon-list">
+            <ul class="icon-list desktop-icons">
                 <li><a href="https://github.com/wellssam" target="_blank"><i class="fab fa-github"></i><span
                             class="visuallyHidden">Github</span></a></li>
                 <li><a href="https://www.linkedin.com/in/sam-wells-6aa43720a/" target="_blank"><i
@@ -182,15 +192,15 @@
             <section class="contact" id="contact">
                 <h2 class="right-heading">Contact</h2>
                 <div class="contact-content">
-                    <form action="">
+                    <form name="samwellsdev-contact" data-netlify="true" method="POST">
                         <label class="visuallyHidden" for="name">Your Name</label>
-                        <input id="name" type="text" placeholder="Your Name" required>
+                        <input name`="name" type="text" placeholder="Your Name" required>
                         <label class="visuallyHidden" for="email">Your Email Address</label>
-                        <input id="email" type="text" placeholder="Your Email Address" required>
+                        <input name="email" type="text" placeholder="Your Email Address" required>
                         <label class="visuallyHidden" for="subject">Subject</label>
-                        <input id="subject" type="text" placeholder="Subject" required>
+                        <input name="subject" type="text" placeholder="Subject" required>
                         <label class="visuallyHidden" for="message">Your Message</label>
-                        <textarea id="message" type="text" placeholder="Your Message" required></textarea>
+                        <textarea name="message" type="text" placeholder="Your Message" required></textarea>
                         <button class="button-styling" type="submit">Send Message</button>
                     </form>
                     <div class="image-wrapper">
@@ -219,10 +229,8 @@
                             resume</span></button></li>
             </ul>
         </div>
+        <p>Powered by <a href="https://www.netlify.com/">Netlify</a></p>
     </footer>
-    <div class="background-elements">
-        <!-- <img src="./assets/bg-element-header-1.png" alt=""> -->
-    </div>
 </body>
 
 </html>
