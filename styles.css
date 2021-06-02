@@ -7,6 +7,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 /* Global */
+
 html{
     font-size: 62.5%;
 
@@ -24,6 +25,7 @@ header{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 main{
@@ -31,6 +33,7 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 100;
 }
 
 a{
@@ -48,6 +51,7 @@ h2{
     font-weight: 700;
     position: relative;
     text-transform: uppercase;
+    z-index: 0;
 }
 
 h2::after{
@@ -212,8 +216,48 @@ p.header-text{
 }
 
 .header-image{
-    width: 400px;
+    width: 40%;
+    border-bottom:#242B58   10px solid ;
+    position: relative;
 }
+
+
+/* silly little halo */
+
+.header-image .halo {
+    content: "";
+    height: 40px;
+    width: 10px;
+    background-color: #242B58;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-image .halo-1{
+    top: -12%;
+    left: 42%;
+    transform: rotate(-20deg);
+}
+
+.header-image .halo-2{
+    top: -12%;
+    left: 55%;
+    transform: rotate(20deg)
+}
+
+.header-image .halo-3{
+    top: -5%;
+    left: 65%;
+    transform: rotate(40deg)
+}
+
+.header-image .halo-4{
+    top: -5%;
+    left: 32%;
+    transform: rotate(-40deg)
+}
+
 
 /* header icons */
 
@@ -425,6 +469,36 @@ div.about-text{
 
 .contact-content .image-wrapper{
     width: 40%;
+    border-bottom: 10px #242B58 solid;
+    border-right: 10px #242B58 solid;
+    position: relative;
+}
+
+/* silly pointer sunburst */
+.sunburst{
+    content: "";
+    height: 5px;
+    width: 20px;
+    background-color: #242B58;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: -3%
+}
+
+.sunburst-1{
+    top: 50%;
+    transform: rotate(-30deg)
+}
+
+.sunburst-2{
+    top: 46%;
+    left: -5%;
+}
+
+.sunburst-3{
+    transform: rotate(40deg);
+    top: 42%;
 }
 
 /* footer */
@@ -454,3 +528,79 @@ footer .icon-list li{
     font-size: 2rem;
 }
 
+@media(max-width: 1025px){
+
+    /* header adjustments */
+    /* taking out header image */
+    .header-image{
+        display: none;
+    }
+
+    /* about me */
+    /* moving the skill gallery below the text and  adjusted the spacing to accomodate that*/
+    .about-flex{
+        flex-direction: column;
+    }
+
+    div.about-text{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .about-text p{
+        margin: 5px 0;
+    }
+    .skill-gallery{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        margin-bottom: 25px;
+    }
+
+    div.about-buttons{
+        text-align: center;
+    }
+
+
+    /* portfolio */
+    /* columning it */
+    .portfolio p{
+        padding-left: 0;
+    }
+
+    .portfolio p::before{
+        display: none;
+    }
+
+    .portfolio-gallery{
+        flex-direction: column;
+        margin-bottom: 120px;
+    }
+
+    .portfolio-gallery li{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    /* contact */
+
+    .contact-content{
+        margin-top: 100px;
+    }
+
+    .contact .image-wrapper{
+        display: none;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+
+    .contact form button{
+        text-align: center;
+        margin: 50px auto 0;
+    }
+
+}
