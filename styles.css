@@ -81,7 +81,7 @@ h2.left-heading::after {
 p {
     color: #b0b0b2;
     font-size: 1.6rem;
-    line-height: 2rem;
+    line-height: 2.4rem;
 }
 
 .wrapper {
@@ -220,6 +220,7 @@ p.header-text {
     width: 40%;
     border-bottom: #242b58 10px solid;
     position: relative;
+    flex-shrink: 0;
 }
 
 /* silly little halo */
@@ -282,6 +283,14 @@ header ul.icon-list {
     height: 30px;
     width: 30px;
     font-size: 2rem;
+}
+
+.icon-list a{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-list button {
