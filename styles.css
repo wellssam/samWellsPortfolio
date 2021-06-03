@@ -442,7 +442,8 @@ div.about-text {
     color: #6b84ff;
 }
 
-.credit-link:hover{
+.credit-link:hover,
+.credit-link:focus{
     text-decoration: underline;
 }
 
