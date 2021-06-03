@@ -729,7 +729,7 @@ footer .icon-list li {
 /* ANIMATION */
 
 /* original animation */
-/* @keyframes flicker{
+@keyframes flicker{
     0%{
         background-color: transparent;
     }
@@ -756,9 +756,9 @@ footer .icon-list li {
 
 .sunburst{
     animation: flicker 5s linear infinite;
-}  */
+} 
 
-@keyframes halo-1{
+/* @keyframes halo-1{
     0%{
         background-color:transparent ;
     }
@@ -876,7 +876,7 @@ footer .icon-list li {
 
 .sunburst-3{
     animation: sunburst-3 2s linear infinite;
-} 
+}  */
 
 
 
