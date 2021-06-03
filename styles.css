@@ -438,6 +438,14 @@ div.about-text {
     padding-left: 35px;
 }
 
+.credit-link{
+    color: #6b84ff;
+}
+
+.credit-link:hover{
+    text-decoration: underline;
+}
+
 .portfolio p::before {
     background-color: #ffffff;
     display: inline-block;
@@ -537,6 +545,8 @@ footer {
     border-top: #242b58 solid 2px;
     height: 70px;
 }
+
+
 
 footer .icon-list {
     width: 180px;
