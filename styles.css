@@ -240,28 +240,28 @@ p.header-text {
 }
 
 .header-image .halo-1 {
+    top: -5%;
+    left: 32%;
+    transform: rotate(-40deg);
+}
+.header-image .halo-2 {
     top: -12%;
     left: 42%;
     transform: rotate(-20deg);
 }
 
-.header-image .halo-2 {
+.header-image .halo-3 {
     top: -12%;
     left: 55%;
     transform: rotate(20deg);
 }
 
-.header-image .halo-3 {
+.header-image .halo-4 {
     top: -5%;
     left: 65%;
     transform: rotate(40deg);
 }
 
-.header-image .halo-4 {
-    top: -5%;
-    left: 32%;
-    transform: rotate(-40deg);
-}
 
 /* header icons */
 
@@ -692,8 +692,12 @@ footer .icon-list li {
     .header-buttons a,
     .header-buttons a:first-child,
     div.about-buttons a,
-    div.about-buttons button:first-child{
+    div.about-buttons :first-child{
         margin: 10px 0;
+    }
+
+    .header-content{
+        height: 700px;
     }
 }
 
@@ -745,7 +749,7 @@ footer .icon-list li {
 
 }
 
-
+/* original animation plan */
 .halo{
     animation: flicker 5s linear infinite;
 }
@@ -753,6 +757,9 @@ footer .icon-list li {
 .sunburst{
     animation: flicker 5s linear infinite;
 }
+
+
+
 
 @keyframes pop-in{
     0%{
