@@ -728,6 +728,7 @@ footer .icon-list li {
 
 /* ANIMATION */
 
+/* original animation */
 /* @keyframes flicker{
     0%{
         background-color: transparent;
@@ -749,34 +750,133 @@ footer .icon-list li {
 
 }
 
-/* original animation plan */
 .halo{
     animation: flicker 5s linear infinite;
 }
 
 .sunburst{
     animation: flicker 5s linear infinite;
-} */
+}  */
 
 @keyframes halo-1{
+    0%{
+        background-color:transparent ;
+    }
+    25%{
+        background-color: #242b58;
+    }
+    75%{
+        background-color:#242b58;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
+@keyframes halo-2{
     0%{
         background-color: #242b58;
     }
     25%{
         background-color: transparent;
     }
+    50%{
+        background-color: #242b58;
+    }
+}
+
+@keyframes halo-3{
+    25%{
+        background-color: #242b58;
+    }
+    50%{
+        background-color: transparent;
+    }
     75%{
-        background-color:transparent;
+        background-color: #242b58;
+    }
+}
+
+@keyframes halo-4{
+    50%{
+        background-color: #242b58;
+    }
+    75%{
+        background-color: transparent;
     }
     100%{
-        background-color: #242b58
+        background-color: #242b58;
     }
 }
 
+
 .halo-1{
-    animation: halo-1 4s linear infinite;
+    animation: halo-1 2s linear infinite;
 }
 
+.halo-2{
+    animation: halo-2 2s linear infinite;
+}
+
+.halo-3{
+    animation: halo-3 2s linear infinite;
+}
+
+.halo-4{
+    animation: halo-4 2s linear infinite;
+}
+
+@keyframes sunburst-1{
+    0%{
+        background-color:transparent ;
+    }
+    33%{
+        background-color: #242b58;
+    }
+    66%{
+        background-color:#242b58;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+
+@keyframes sunburst-2{
+    0%{
+        background-color: #242b58;
+    }
+    33%{
+        background-color: transparent;
+    }
+    66%{
+        background-color: #242b58;
+    }
+   
+}
+
+@keyframes sunburst-3{
+    33%{
+        background-color: #242b58;
+    }
+    66%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: #242b58;
+    }
+}
+
+.sunburst-1{
+    animation: sunburst-1 2s linear infinite;
+}
+
+.sunburst-2{
+    animation: sunburst-2 2s linear infinite;
+}
+
+.sunburst-3{
+    animation: sunburst-3 2s linear infinite;
+} 
 
 
 
