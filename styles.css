@@ -724,7 +724,7 @@ footer .icon-list li {
 
 /* ANIMATION */
 
-@keyframes flicker{
+/* @keyframes flicker{
     0%{
         background-color: transparent;
     }
@@ -752,6 +752,25 @@ footer .icon-list li {
 
 .sunburst{
     animation: flicker 5s linear infinite;
+} */
+
+@keyframes halo-1{
+    0%{
+        background-color: #242b58;
+    }
+    25%{
+        background-color: transparent;
+    }
+    75%{
+        background-color:transparent;
+    }
+    100%{
+        background-color: #242b58
+    }
+}
+
+.halo-1{
+    animation: halo-1 4s linear infinite;
 }
 
 @keyframes pop-in{
