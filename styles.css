@@ -378,7 +378,11 @@ div.about-text {
 .about h3 {
     font-size: 2.8rem;
     font-weight: 700;
+    color: #6b84ff;
+    position: relative;
+    
 }
+
 
 .about-buttons :first-child {
     margin-right: 40px;
@@ -403,6 +407,10 @@ div.about-text {
 .portfolio-gallery .image-wrapper {
     border-radius: 5%;
     overflow: hidden;
+}
+
+.portfolio-text{
+    padding: 3px;
 }
 
 .portfolio-gallery h3 {
@@ -808,7 +816,17 @@ nav li,
     }
 }
 
-/* .portfolio-gallery .image-wrapper{
-    transition: scale 0.2s ease-in;
-} */
-
+@media(min-width: 1025px){
+    .portfolio-gallery li{
+        border-radius: 5%;
+        box-sizing:border-box;
+        transition: all 1s ease-out;
+        padding-bottom: 5px;
+    }
+    
+    .portfolio-gallery li:hover{
+        border: #242b58 2px solid;
+        transform: scale(1.05);
+        
+    }
+}
