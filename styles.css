@@ -138,7 +138,7 @@ ul.nav-items {
 }
 
 .nav-items li:hover,
-.nav-items li:focus {
+.nav-items li a:focus {
     color: #6b84ff;
 }
 
@@ -303,7 +303,7 @@ header ul.icon-list {
 }
 
 .icon-list li:hover,
-.icon-list li:focus {
+.icon-list a:focus {
     color: #6b84ff;
 }
 
@@ -320,10 +320,12 @@ ul.icon-list li:first-child {
     color: #ffffff;
     background-color: #090a1a;
     font-size: 3rem;
+    overflow: hidden;
 }
 
 ul.icon-list li:first-child:hover,
-ul.icon-list li:first-child:focus {
+ul.icon-list li:first-child a:focus {
+    color: #ffffff;
     background-color: #6b84ff;
 }
 
@@ -402,6 +404,7 @@ div.about-text {
 
 .portfolio-gallery li {
     width: 30%;
+    border-radius: 5%;
 }
 
 .portfolio-gallery .image-wrapper {
@@ -444,6 +447,10 @@ div.about-text {
     position: absolute;
     left: 0px;
     top: 10px;
+}
+
+.portfolio-gallery li:focus-within{
+    border: #242b58 2px solid;
 }
 
 /* testimonials will go here if i add them */
@@ -944,13 +951,13 @@ nav li,
 
 @media(min-width: 1025px){
     .portfolio-gallery li{
-        border-radius: 5%;
         box-sizing:border-box;
         transition: all 1s ease-out;
         padding-bottom: 5px;
     }
     
-    .portfolio-gallery li:hover{
+    .portfolio-gallery li:hover,
+    .portfolio-gallery li:focus-within{
         border: #242b58 2px solid;
         transform: scale(1.05);
         
