@@ -413,7 +413,7 @@ div.about-text {
 }
 
 .portfolio-text{
-    padding: 3px;
+    padding: 5px;
 }
 
 .portfolio-gallery h3 {
@@ -439,7 +439,7 @@ div.about-text {
 }
 
 .credit-link{
-    color: #6b84ff;
+    color: #b3d4fc;
 }
 
 .credit-link:hover,
@@ -458,8 +458,13 @@ div.about-text {
     top: 10px;
 }
 
+
 .portfolio-gallery li:focus-within{
     border: #242b58 2px solid;
+}
+
+.portfolio-gallery li:focus-within .portfolio-text{
+    padding: 3px;
 }
 
 /* testimonials will go here if i add them */
@@ -495,6 +500,13 @@ div.about-text {
 
 .contact-content textarea {
     padding: 15px 0;
+}
+
+.contact-content form input:focus,
+.contact-content form textarea:focus,
+.contact-content form button:focus {
+    outline: none;
+    border: #6b84ff 2px solid;
 }
 
 .contact-content form input::placeholder,
