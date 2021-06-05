@@ -460,12 +460,9 @@ div.about-text {
 
 
 .portfolio-gallery li:focus-within{
-    border: #242b58 2px solid;
+    outline: #242b58 2px solid;
 }
 
-.portfolio-gallery li:focus-within .portfolio-text{
-    padding: 3px;
-}
 
 /* testimonials will go here if i add them */
 
@@ -981,7 +978,7 @@ nav li,
     
     .portfolio-gallery li:hover,
     .portfolio-gallery li:focus-within{
-        border: #242b58 2px solid;
+        outline: #242b58 2px solid;
         transform: scale(1.05);
         
     }
